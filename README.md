@@ -1,4 +1,4 @@
-Sam Theme & Plugin Options Panel is a state of the art script that allows developers to add quick and easy powerful options to their WordPress Theme or Plugin. Sam is so easy to use and so fast that is suitable for both experienced developers and beginners.
+Sam Theme & Plugin Options Panel allows developers to add quick and easy powerful options to their WordPress Theme or Plugin. Sam is so easy to use and so fast that is suitable for both experienced developers and beginners.
 
 With Sam your themes or plugins will look gorgeous and users will feel comfortable. The user interface was designed so that users will rapidly operate it without programming skills needed. Friendly user options types such as number sliders, button groups, image groups, select boxes with search, multi-select boxes, all of them and many other designed only for user comfort.
 
