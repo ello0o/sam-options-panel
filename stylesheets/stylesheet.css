@@ -223,14 +223,20 @@ a {
 .site-footer {
   padding-top: 2rem;
   margin-top: 2rem;
-  border-top: solid 1px #eff0f1; }
+  border-top: solid 1px #eff0f1;
+  text-align: center; }
 
 .site-footer-owner {
   display: block;
   font-weight: bold; }
 
 .site-footer-credits {
-  color: #819198; }
+  color: #333a40;
+  font-size: 14px;
+  font-family: Open Sans,sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
 
 @media screen and (min-width: 64em) {
   .site-footer {
