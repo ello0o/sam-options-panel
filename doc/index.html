@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Sam Option | Themology</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="icon" type="image/png" href="img/32.png">
+<link rel="apple-touch-icon" href="img/114-iPhone-App-Icon%4005x.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/114-iPhone-App-Icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/144-iPad-App-Icon%4005x.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/144-iPad-App-Icon.png">
+
+<link rel='stylesheet' id='themo-bootstrap-css-css'  href='css/bootstrap.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='themo-fontawesome-css'  href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='themo-fonts-css'  href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Lora:400,700,400italic,700italic' type='text/css' media='all' />
+<link rel='stylesheet' id='themo-lightbox-css'  href='css/lightbox.css' type='text/css' media='all' />
+<link rel='stylesheet' id='themo-prism-css-css'  href='css/prism.css' type='text/css' media='all' />
+<link rel='stylesheet' id='themo-style-css'  href='css/style.css' type='text/css' media='all' />
+</head>
+
+<body class="home blog" data-spy="scroll" data-target="#side">
+<div id="side-bg"></div>
+<div id="side">
+	<ul id="main-menu" class="nav sidenav" data-spy="affix">
+				<li><a href="#2">Free Support</a></li>
+				<li><a href="#6">Theme & Plugin Integration</a></li>
+				<li><a href="#14">Options & Attributes</a></li>
+				<li><a href="#22">Outputting Values</a></li>
+				<li><a href="#26">Sidebar Generator</a></li>
+			</ul>
+</div>
+<div id="main">
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="jumbotron">
+				<div id="text-2" class="sidebar-widget widget_text">			<div class="textwidget"><div class="details text-center"><span>Sam WordPress Theme &amp; Plugin Options Panel</span><span>Version: 1.0</span><span>Author: Themology</span></div>
+<h1>Sam Options Panel</h1>
+<p class="lead">You can read below a comprehensive guide with detailed instructions about the Sam functionalities. Each section is carefully explained, using helpful screenshots and videos when necessary. It contains everything you need to have your plugin up and running in no time.</p>
+<div class="btn-group btn-group-justified hidden-sm hidden-xs">
+<div class="btn-group btn-group-lg"><a href="http://themology.net/forum" class="btn btn-primary">Free Support</a></div>
+<div class="btn-group btn-group-lg"><a href="http://facebook.com/themology" class="btn btn-primary">Follow us on Facebook</a></div>
+<div class="btn-group btn-group-lg"><a href="#" class="btn btn-primary">YouTube Channel</a></div>
+</div>
+
+<div class="visible-sm visible-xs buttons">
+<a href="#" class="btn btn-lg btn-primary">Customer Support</a>
+<a href="#" class="btn btn-lg btn-primary">Follow us on Facebook</a>
+<a href="#" class="btn btn-lg btn-primary">YouTube Channel</a>
+</div>
+</div>
+		</div>				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12"  id="content">
+				
+								<section id="2">
+											<h1>Free Support</h1>
+										<p>We provide <strong>Free Support for all Themology's</strong> products through our quick and easy ticket application interface. Please limit your inquiries to problems related to the Sam, its setup and features. For any problems concerning third-party plugins you should address the application's developer.</p>
+<p class="alert alert-info"><strong>Note:</strong> We can not offer support for custom CSS code customization. You should ask a professional developer for aid if you require help with advanced customization and programming.</p>
+<h2>Free Ticket Support</h2>
+<p>Themology offers a <strong>free ticket support application</strong> for all clients, through a real-time license code automatic verification. The dedicated app is <strong>fast and easy to use</strong> and includes an email notification feature. We will let you know as soon as your inquiry has received an answer. Thanks to our modern design, you can also upload images as an attachment to your support ticket.</p>
+<p>Before <strong>opening a new ticket</strong>, please make sure you have read through <strong>all our documentation</strong> and watched the <strong>video tutorials</strong>. Also, our <strong>FAQ section</strong> contains helpful answer to questions we often receive from our customers. Following these steps is in the users’ interest, as they will save valuable time. Still, we are always happy to respond to any inquiries you may have related to the Sam.</p>
+<p>&nbsp;</p>
+<p><a class="btn btn-primary btn-lg" href="http://themology.net/forum" target="_blank">Create Support Ticket</a> <a class="btn btn-default btn-lg" href="http://themology.net/forum" target="_blank">Knowledgebase</a></p>
+					
+									</section>
+								<section id="6">
+											<h1>Theme & Plugin Integration</h1>
+<p>In order to install Sam Theme Option you need to follow the next steps:</p>
+<ul>
+<li><strong>Step 1:</strong> Unzip the package downloaded from Github</li>
+<li><strong>Step 2:</strong> Open the folder named <strong>core</strong> located in your unzipped folder of the download package</li>
+<li><strong>Step 3:</strong> From your unzipped folder copy to clipboard the folder named <strong>admin</strong> and paste it in your theme or plugin folder <span class="muted">(ie. wp-content/themes/twentyeleven/admin/)</span></li>
+<li><strong>Step 4:</strong> Open up the <strong>functions.php</strong> file, located in your theme or your plugin file and paste the following lines of code:
+<pre class="language-markup">/** Define the Options Prefix */
+define('THEMEPREFIX', 'samr');
+
+/** Include the Sam plugin */
+include( get_template_directory() . '/admin/admin-page.php' );
+	
+/** Include the $options array */
+include( 'admin/options.php' );
+
+/** Create the Options Page */
+$options_page = new SamOptions( $name, $slug, $prefix, $parent, $icon, $role, 
+$order, $style, $title, $sidebar, $options, $url, $options );
+</pre>
+<ul>
+<li><strong>IMPORTANT:</strong> It is important to understand that this plugin may be used by other developers and it may end up to be used multiple times in the same WordPress installation, which is perfectly fine, just bear in mind that your prefix constant needs to be unique.</li>
+<li><strong>THEMEPREFIX</strong> - Please choose a unique PREFIX constant, such as THEMEPREFIX, PLUGINPREFIX, MYPREFIX, ABCPREFIX; try to make sure you choose a constant name that will more likely be unique. Please set an unique prefix for your options. Your options will be saved in the options table of WordPress so it's important that they have a unique name. <span class="muted">(ie. if your theme is called Metronic use metro as THEMEPREFIX)</span></li>
+<li><strong>$name</strong> - Please set your Theme Options Page name &amp; title. This is how your page will appear under the Appearance menu. <span class="muted">(ie. Theme Options, Site Options, Main Options). Default: "Sam Options"</span></li>
+<li><strong>$slug</strong> - Please set you options page menu slug. Default: "sam-options"</li>
+<li><strong>$prefix</strong> - Please set your options page prefix. It should be same as the THEMEPREFIX constant. Default: "samr"</li>
+<li><strong>$parent</strong> - Please set the parent of your page. Default: null. Please see <a href="http://codex.wordpress.org/Function_Reference/add_submenu_page">http://codex.wordpress.org/Function_Reference/add_submenu_page</a> for more details</li>
+<li><strong>$icon</strong> - Please set an icon for your page. The icon is not available for submenu pages. Default: null. Please see <a href="http://melchoyce.github.io/dashicons/ ">http://melchoyce.github.io/dashicons/</a>  for more details</li>
+<li><b>$role</b> - Please set your Theme Options Page user roles. This setting will set the permissions for this page based on the user level. To learn more about WordPress User Roles please visit this page: <a href="http://codex.wordpress.org/Roles_and_Capabilities" target="_blank">http://codex.wordpress.org/Roles_and_Capabilities</a> and see the Capability vs. Role Table for user roles. (ie. if you want all users to access the Theme Options Page set your $role to 'read')</li>
+<li><strong>$order</strong> - Please set the order of your page. Default: null</li>
+<li><strong>$style</strong> - Please choose if you want to use the standard WordPress typography or not. If true, the typography will be slightly enhanced. Default: boolean true</li>
+<li><strong>$title</strong> - Please choose if you want your options page to have a title. Default: boolean false</li>
+<li><strong>$sidebar</strong> - If you wish to use the Sam Sidebar Generator for your theme just set this to boolean true. For more details see <a href="index.html#26">Chapter Sidebars</a></li>
+<li><strong>$options</strong> - Please provide an array with options which will be used to generate the options page</li>
+<li><strong>$url</strong> - Please enter the url of the theme or of the plugin. It is recommended that you use the <a href="http://codex.wordpress.org/Function_Reference/get_template_directory_uri">get_template_directory_uri() function</a> for themes and the <a href="http://codex.wordpress.org/Function_Reference/plugins_url">plugins_url() function</a> for plugins. For themes this parameter can be empty, but for plugins is mandatory</li>
+<li><strong>$folder</strong> - By default the plugin is located in the <strong>admin</strong> folder, but if you wish change it you will have to set this parameter with the new path.</li>
+</ul>
+</li>
+<li><strong>Step 5:</strong> That's it! The Sam is now added to your Wordpress Theme or Plugin.</li>
+</ul>
+					
+									</section>
+								<section id="14">
+											<h1>Options & Attributes</h1>
+										<p>Before you start adding your options it's important that you read the following details about each option. With Sam you can create an unlimited number of option pages.</p>
+<p>Adding options is quite simple, all you have to do is open the <strong>options.php</strong> file located in your admin folder and add your options as part of the options array.</p>
+<p>Before adding your options it's important to understand that each option needs to be prefixed with your custom <strong>THEMEPREFIX</strong>.</p>
+<h2>List of available options with their available attributes</h2>
+<ol>
+<li><strong>Sections (Admin Only) </strong>Attributes: name, type
+<pre class="language-markup">$options[] = array( "name" =&gt; "All Options",
+                    "type" =&gt; "section");
+</pre>
+</li>
+<li><strong>Titles (Admin Only) </strong>Attributes: name, type, class, desc
+<pre class="language-markup">$options[] = array( "name" =&gt; "Title Field",
+                    "type" =&gt; "title",
+                    "desc" =&gt; "Sed haec quis possit intrepidus aestimare tellus");
+</pre>
+</li>
+<li><strong>Info Boxes (Admin Only) </strong>Attributes: name, type, class, desc, std
+<pre class="language-markup">$options[] = array( "name" =&gt; "Info Box Field",
+                    "type" =&gt; "info",
+                    "std" =&gt; "Me non paenitet nullum festiviorem excogitasse ad hoc");
+</pre>
+</li>
+<li><strong>Dividers (Admin Only) </strong>Attributes: type
+<pre class="language-markup">$options[] = array("type" =&gt; "divider");
+</pre>
+</li>
+<li><strong>HTML Fields (Admin Only) </strong>Attributes: name, type, class, desc, std
+<pre class="language-markup">$options[] = array( "name" =&gt; "HTML Field",
+                    "type" =&gt; "html",
+                    "std" =&gt; "Me non paenitet nullum festiviorem excogitasse ad hoc.");
+</pre>
+</li>
+<li><strong>Text Fields </strong>Attributes: id, name, type, class, desc, std, placeholder
+<pre class="language-markup">$options[] = array( "name" =&gt; "Text Field",
+                    "desc" =&gt; "Sed haec quis possit intrepidus aestimare tellus",
+                    "id" =&gt; THEMEPREFIX."_text",
+                    "class" =&gt; "medium first",
+                    "placeholder" =&gt; "Placeholder",
+                    "std" =&gt; null,
+                    "type" =&gt; "text");
+</pre>
+</li>
+<li><strong>Textarea Fields </strong>Attributes: id, name, type, class, desc, std, placeholder
+<pre class="language-markup">$options[] = array( "name" =&gt; "Textarea Field",
+                    "desc" =&gt; "Sed haec quis possit intrepidus aestimare tellus",
+                    "id" =&gt; THEMEPREFIX."_textarea",
+                    "class" =&gt; "medium first",
+                    "placeholder" =&gt; "Textarea Field",
+                    "std" =&gt; null,
+                    "type" =&gt; "textarea");
+</pre>
+</li>
+<li><strong>Editor Fields (WordPress Editor) </strong>Attributes: id, name, type, class, desc, std, editor_settings
+<pre class="language-markup">$options[] = array( "name" =&gt; "WordPress Editor Field",
+                    "desc" =&gt; "Sed haec quis possit intrepidus aestimare tellus",
+                    "id" =&gt; THEMEPREFIX."_editor",
+                    "type" =&gt; "editor");
+</pre>
+</li>
+<li><strong>Checkboxes </strong>Attributes: id, name, type, class, desc, std
+<pre class="language-markup">$options[] = array( "name" =&gt; "Checkbox Field",
+                    "desc" =&gt; "Sed haec quis possit intrepidus aestimare tellus",
+                    "id" =&gt; THEMEPREFIX."_checkbox",
+                    "class" =&gt; "medium first",
+                    "std" =&gt; "true",
+                    "type" =&gt; "checkbox");
+</pre>
+</li>
+<li><strong>Checkbox Lists </strong>Attributes: id, name, type, class, desc, std, options
+<pre class="language-markup">$options[] = array( "name" =&gt; "Checkboxes Field",
+                    "desc" =&gt; "Sed haec quis possit intrepidus aestimare tellus",
+                    "id" =&gt; THEMEPREFIX."_checkboxes3",
+                    "class" =&gt; "medium first",
+                    "std" =&gt; array("true", null, "true"),
+                    "type" =&gt; "checkboxes",
+                    "options" =&gt; array(
+                         0 =&gt; "First Option",
+                         1 =&gt; "Second Option",
+                         2 =&gt; "Third Option"
+                    ));	
+</pre>
+</li>
+<li><strong>Radio Buttons </strong>Attributes: id, name, type, class, desc, std, options
+<pre class="language-markup">$options[] = array( "name" =&gt; "Radio Boxes Field",
+                    "desc" =&gt; "Sed haec quis possit intrepidus aestimare tellus",
+                    "id" =&gt; THEMEPREFIX."_radios2",
+                    "class" =&gt; "medium first",
+                    "std" =&gt; 2,
+                    "type" =&gt; "radio",
+                    "options" =&gt; array(
+                         0 =&gt; "First Option",
+                         1 =&gt; "Second Option",
+                         2 =&gt; "Third Option"
+                    ));	
+</pre>
+</li>
+<li><strong>Classic Select Boxes </strong>Attributes: id, name, type, class, desc, std, options
+<pre class="language-markup">$options[] = array( "name" =&gt; "Classic Select Field",
+                    "desc" =&gt; "Sed haec quis possit intrepidus aestimare tellus",
+                    "id" =&gt; THEMEPREFIX."_select",
+                    "class" =&gt; "medium first",
+                    "std" =&gt; 2,
+                    "type" =&gt; "select",
+                    "options" =&gt; array(
+                         0 =&gt; "First Option",
+                         1 =&gt; "Second Option",
+                         2 =&gt; "Third Option"
+                    ));
+</pre>
+</li>
+<li><strong>Select Boxes with Search </strong>Attributes: id, name, type, class, desc, std, options
+<pre class="language-markup">$options[] = array( "name" =&gt; "Special Select Field",
+                    "desc" =&gt; "Sed haec quis possit intrepidus aestimare tellus",
+                    "id" =&gt; THEMEPREFIX."_select_search",
+                    "class" =&gt; "medium first",
+                    "std" =&gt; 1,
+                    "type" =&gt; "select_search",
+                    "options" =&gt; array(
+                         0 =&gt; "First Option",
+                         1 =&gt; "Second Option",
+                         2 =&gt; "Third Option"
+                    ));
+</pre>
+</li>
+<li><strong>Multi-Select Boxes </strong>Attributes: id, name, type, class, desc, std, options
+<pre class="language-markup">$options[] = array( "name" =&gt; "Multi Select Field",
+                    "desc" =&gt; "Sed haec quis possit intrepidus aestimare tellus",
+                    "id" =&gt; THEMEPREFIX."_select_multi",
+                    "class" =&gt; "medium first",
+                    "std" =&gt; array(0, 2),
+                    "type" =&gt; "select_multiple",
+                    "options" =&gt; array(
+                         0 =&gt; "First Option",
+                         1 =&gt; "Second Option",
+                         2 =&gt; "Third Option"
+                    ));                    	
+</pre>
+</li>
+<li><strong>Switches </strong>Attributes: id, name, type, class, desc, std
+<pre class="language-markup">$options[] = array( "name" =&gt; "Use Responsive Layout",
+                    "desc" =&gt; "Non equidem invideo, miror magis posuere velit aliquet.",
+                    "id" =&gt; THEMEPREFIX."_responsive",
+                    "class" =&gt; "medium last",
+                    "std" =&gt; "true",
+                    "type" =&gt; "switch");
+</pre>
+</li>
+<li><strong>Upload Field (WordPress Upload) </strong>Attributes: id, name, type, class, desc, std
+<pre class="language-markup">$options[] = array( "name" =&gt; "Upload Field",
+                    "desc" =&gt; "Sed haec quis possit intrepidus aestimare tellus",
+                    "id" =&gt; THEMEPREFIX."_upload",
+                    "class" =&gt; "medium first",
+                    "std" =&gt; null,
+                    "type" =&gt; "upload");
+</pre>
+</li>
+<li><strong>Mini Upload Field (WordPress Upload) </strong>Attributes: id, name, type, class, desc, std :
+<pre class="language-markup">$options[] = array( "name" =&gt; "Mini Upload Field",
+                    "desc" =&gt; "Sed haec quis possit intrepidus aestimare tellus",
+                    "id" =&gt; THEMEPREFIX."_upload_min",
+                    "class" =&gt; "medium first",
+                    "std" =&gt; null,
+                    "type" =&gt; "upload_min");
+</pre>
+</li>
+<li><strong>Number Fields (Sliders) </strong>Attributes: id, name, type, class, desc, std, min, max, prefix, suffix, increment
+<pre class="language-markup">$options[] = array( "name" =&gt; "Number Field",
+                    "desc" =&gt; "Sed haec quis possit intrepidus aestimare tellus",
+                    "id" =&gt; THEMEPREFIX."_slider",
+                    "class" =&gt; "medium first",
+                    "std" =&gt; 20,
+                    "min" =&gt; 0,
+                    "max" =&gt; 100,
+                    "prefix" =&gt; null,
+                    "suffix" =&gt; "%",
+                    "increment" =&gt; 0.1,
+                    "type" =&gt; "number");
+</pre>
+</li>
+<li><strong>Button Groups </strong>Attributes: id, name, type, class, desc, std, options
+<pre class="language-markup">$options[] = array( "name" =&gt; "Buttons Field",
+                    "desc" =&gt; "Sed haec quis possit intrepidus aestimare tellus",
+                    "id" =&gt; THEMEPREFIX."_buttons",
+                    "class" =&gt; "medium first",
+                    "std" =&gt; 2,
+                    "type" =&gt; "buttons",
+                    "options" =&gt; array(
+                         0 =&gt; "First Option",
+                         1 =&gt; "Second Option",
+                         2 =&gt; "Third Option"
+                    ));
+</pre>
+</li>
+<li><strong>Image Groups </strong>Attributes: id, name, type, class, desc, std, options
+<pre class="language-markup">$options[] = array( "name" =&gt; "Images Field",
+                    "desc" =&gt; "Sed haec quis possit intrepidus aestimare tellus",
+                    "id" =&gt; THEMEPREFIX."_images",
+                    "class" =&gt; "medium first",
+                    "std" =&gt; 2,
+                    "type" =&gt; "images",
+                    "options" =&gt; array(
+                         0 =&gt; $imgurl.'img1.png',
+                         1 =&gt; $imgurl.'img2.png',
+                         2 =&gt; $imgurl.'img3.png'
+                    ));
+</pre>
+<p class="muted">$imgurl is a variable that holds the file path</p>
+</li>
+<li><strong>Classic Typography </strong>Attributes: id, name, type, class, desc, std, options, min, max, suffix
+<pre class="language-markup">$options[] = array( "name" =&gt; "Google Font Field",
+                    "desc" =&gt; "Sed haec quis possit intrepidus aestimare tellus",
+                    "id" =&gt; THEMEPREFIX."_font",
+                    "class" =&gt; "medium first",
+                    "std" =&gt; array("Droid Sans", 20, 0, 0),
+                    "min" =&gt; 10,
+                    "max" =&gt; 24,
+                    "suffix" =&gt; "px",
+                    "type" =&gt; "google_font",
+                    "options" =&gt; $google_fonts);
+</pre>
+<p class="muted">$google_font is an array that holds the font list</p>
+</li>
+<li><strong>Google Typography </strong>Attributes: id, name, type, class, desc, std, options, min, max, suffix
+<pre class="language-markup">$options[] = array( "name" =&gt; "Classic Font Field",
+                    "desc" =&gt; "Sed haec quis possit intrepidus aestimare tellus",
+                    "id" =&gt; THEMEPREFIX."_font2",
+                    "class" =&gt; "medium first",
+                    "std" =&gt; array("Arial, sans-serif", 20, 0, 0),
+                    "min" =&gt; 10,
+                    "max" =&gt; 24,
+                    "suffix" =&gt; "px",
+                    "type" =&gt; "font",
+                    "options" =&gt; $font_list);
+</pre>
+<p class="muted">$font_list is an array that holds the font list</p>
+</li>
+<li><strong>Color Pickers (WordPress Color Picker) </strong>Attributes: id, name, type, class, desc, std
+<pre class="language-markup">$options[] = array( "name" =&gt; "Color Field",
+                    "desc" =&gt; "Sed haec quis possit intrepidus aestimare tellus",
+                    "id" =&gt; THEMEPREFIX."_color",
+                    "class" =&gt; "medium first",
+                    "std" =&gt; "#CC0000",
+                    "type" =&gt; "color");	
+</pre>
+</li>
+<li><strong>iFrames (Admin Only) </strong>Attributes: id, name, type, class, desc, source, height
+<pre class="language-markup">$options[] = array( "name" =&gt; "iFrame Field",
+                    "type" =&gt; "iframe",
+                    "source" =&gt; "http://www.themology.net",
+                    "height" =&gt; 500,
+                    "desc" =&gt; "At nos hinc posthac, sitientis piros Afros";
+</pre>
+</li>
+<li><strong>Backup &amp; Restore Field </strong>Attributes: name, type, class, desc
+<pre class="language-markup">$options[] = array( "name" =&gt; "Backup Field",
+                    "desc" =&gt; "Sed haec quis possit intrepidus aestimare tellus",
+                    "id" =&gt; THEMEPREFIX."_textarea",
+                    "class" =&gt; "medium first",
+                    "type" =&gt; "backup");
+</pre>
+</li>
+<li><strong>Reset Field </strong>Attributes: name, type, class, desc
+<pre class="language-markup">$options[] = array( "name" =&gt; "Reset Theme Options",
+                    "desc" =&gt; "Tityre, tu patulae recubans sub tegmine fagi  dolor",
+                    "class" =&gt; "medium first",
+                    "type" =&gt; "reset");	
+</pre>
+</li>
+<li><strong>Export Field</strong> Attributes: name, type, class, desc
+<pre class="language-markup">$options[] = array( "name" =&gt; "Export Field",
+		            "desc" =&gt; "Sed haec quis possit intrepidus aestimare tellus",
+		            "class" =&gt; "medium first",
+		            "type" =&gt; "export");		
+</pre>
+</li>
+<li><strong>Import Field</strong> Attributes: name, type, class, desc, placeholder
+<pre class="language-markup">$options[] = array( "name" =&gt; "Import Field",
+		            "desc" =&gt; "Tityre, tu patulae recubans sub tegmine fagi dolor.",
+		            "class" =&gt; "medium last",
+		            "placeholder" =&gt; "Paste your export code here",
+		            "type" =&gt; "import");			
+</pre>
+</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>(Admin Only)</strong> - This options are only available in the admin and they are used for constructing the Theme Options Page.</p>
+<h2>Attributes</h2>
+<ul>
+<li><strong>name</strong> - Name of the option field.</li>
+<li><strong>type</strong> - Type of the option field. Available types are: section, title, info, divider, html, text, textarea, editor, checkbox, checkboxes, radio, select, select_multiple, select_search, switch, number, buttons, images, google_font, font, color, iframe, backup, reset<span class="text-error"><strong>This is a mandatory field on all fields</strong></span></li>
+<li><strong>class</strong> - CSS class of the option field. Default values are: <strong>tiny</strong> (25% width), <strong>short</strong> (33.33% width), <strong>medium</strong> (50% width), <strong>first</strong> (if it's the first element within a set), <strong>last</strong> (if it's the last element within a set). No class is required if you want the element to be 100%.If only one element needs a size class, and nothing else after it then <strong>first</strong> needs to be applied. Fields can be grouped on rows of one, two, three and four elements. Each time specifying the <strong>first and last is mandatory</strong> except the case where is only one 100% width element.</li>
+<li><strong>desc</strong> - Option field description. Place below the field in small gray text</li>
+<li><strong>std</strong> - Standard (default) option field value. Depending on the field type the <strong>std</strong> field can be a string, an array or NULL.</li>
+<li><strong>id</strong> - Unique options field id. Must start with the <strong>THEMEPREFIX</strong> constant. <span class="muted">(ie: THEMEPREFIX.'_website_name')</span><br />
+<span class="text-error"><strong>This is a mandatory field on all fields if specified above</strong></span></li>
+<li><strong>placeholder</strong> - Options field placeholder. Only for text and textarea fields</li>
+<li><strong>editor_settings</strong> - Options field editor settings. Array of settings for the WordPress Editor initialization.<br />
+More details here: <a href="https://codex.wordpress.org/Function_Reference/wp_editor" target="_blank">https://codex.wordpress.org/Function_Reference/wp_editor</a></li>
+<li><strong>options</strong> - Options field options. Array of options. Only for checkboxes, radio buttons, select boxes, buttons &amp; images <span class="muted">(ie. array("Choice 1", "Choice 2", "Choice 3"))</span></li>
+<li><strong>min</strong> - Options field minimum. This sets the minimum value of the slider. For number it will be the minimum number, while for fonts it will be the minimum font size.</li>
+<li><strong>max</strong> - Options field maximum. This sets the maximum value of the slider. For number it will be the maximum number, while for fonts it will be the maximum font size.</li>
+<li><strong>prefix</strong> - Prefix for the number. The slider value will be prefixed with this attribute's value. Only applicable for the <strong>number</strong> and <strong>fonts</strong> fields</li>
+<li><strong>suffix</strong> - Suffix for the number. The slider value will be suffixed with this attribute's value. Only applicable for the <strong>number</strong> and <strong>fonts</strong> fields</li>
+<li><strong>increment</strong> - Increment value. This value will act as incremental steps for the slider. Only applicable for the <strong>number</strong> and <strong>fonts</strong> fields.<span class="muted">(ie. 1, 0.1, 5, 0.5)</span></li>
+<li><strong>source</strong> - iFrame source. Only applicable to iframes</li>
+<li><strong>height</strong> - Set the height of the iframe. Only applicable to iframes</li>
+</ul>
+					
+									</section>
+								<section id="22">
+											<h1>Outputting Values</h1>
+										<p>For outputting options please review the sample-page.php file located in the <strong>WordPress Files</strong> folder</p>
+<p>Options are outputted using the get_option() WordPress function. For more details about this, you can visit this link: <a href="http://codex.wordpress.org/Function_Reference/get_option" target="_blank">http://codex.wordpress.org/Function_Reference/get_option</a></p>
+<h2>Storing &amp; Displaying Options</h2>
+<pre class="language-markup">// Storing an option
+$name = get_option(THEMEPREFIX."_name");
+
+// Displaying the option
+echo get_option(THEMEPREFIX."_name");
+</pre>
+<h2>Sample Code</h2>
+<pre class="language-markup">$name = get_option(THEMEPREFIX."_name");
+</pre>
+<h2>Special Field Output</h2>
+<ul>
+<li><strong style="min-width: 150px; display: inline-block;">Image Field:</strong>
+<pre class="language-markup">get_option(THEMEPREFIX."_image");</pre>
+</li>
+<li><strong style="min-width: 150px; display: inline-block;">Image Field ID:</strong>
+<pre class="language-markup">get_option(THEMEPREFIX."_image_id");
+</pre>
+<p>After your original field id just add <strong>_id</strong> to retrieve the <strong>image id</strong> not the file path.</li>
+<li><strong style="min-width: 150px; display: inline-block;">Typography:</strong>
+<pre  class="language-markup">get_option(THEMEPREFIX."_font");
+</pre>
+<p>Returns the Family</li>
+<li><strong style="min-width: 150px; display: inline-block;">Typography Size:</strong>
+<pre class="language-markup">get_option(THEMEPREFIX."_font_size");
+</pre>
+<p>After your original field id just add <strong>_size</strong> to retrieve the <strong>font size</strong></li>
+<li><strong style="min-width: 150px; display: inline-block;">Typography Style:</strong>
+<pre class="language-markup">get_option(THEMEPREFIX."_font_style");
+</pre>
+<p>After your original field id just add <strong>_style</strong> to retrieve the <strong>font style</strong></li>
+<li><strong style="min-width: 150px; display: inline-block;">Typography Variant:</strong>
+<pre class="language-markup">get_option(THEMEPREFIX."_font_variant");
+</pre>
+<p>After your original field id just add <strong>_variant</strong> to retrieve the <strong>font variant</strong></li>
+</ul>
+					
+									</section>
+								<section id="26">
+											<h1>Sidebar Generator</h1>
+										<p>Sam comes embedded with a beautiful yet simple sidebar generator. If you want to use this sidebar generator you need to set the <strong>$sidebar</strong> parameter of at least one options page to boolean true. See <a href="index.html#6">Chapter Theme &amp; Plugin Integration</a> for details.</p>
+<p>When at least one <strong>$sidebar</strong> parameter set to boolean true a couple of things will be activated:</p>
+<ol>
+<li>A new page called <strong>Sidebars</strong> will appear under Appearance. From this page users can manage their dynamic sidebars. (add new sidebars or delete existing sidebars)</li>
+<li>A new meta-box is added on the side of all pages and posts. It is called <strong>Sidebars</strong> and this is used to define a custom sidebar for that post or page.</li>
+<li>A new shortcode is added: <strong>[dynamic-sidebar id="4"]</strong> . This shortcode will work anywhere in the theme where shortcodes are allowed, adding a sidebar. The id of each sidebar is shown in the list of sidebars</li>
+</ol>
+<h2>Dynamic Sidebars Theme Integration</h2>
+<p>When you want to load a dynamic sidebar you need to use the following code:</p>
+<pre class="language-markup">&lt;?php SamSidebars::sidebar('sidebar-3', true); ?&gt;
+</pre>
+<p>This code will first check if this page/post has a dynamic sidebar assigned. If it doesn't have any sidebar attached it will load <strong>sidebar-3</strong>. If the second parameter is set to true, it will also check if the sidebar that will be displayed is active or not. If there is an assigned sidebar but is not active then, it will check if the default sidebar is active; if none of them are active then it will return null; The second parameter is optional.</p>
+					
+									</section>
+						
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12" id="footer">
+								<small class="text-muted last-update">Last Documentation Update: </small>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<script type='text/javascript' src='js/jquery/jquery5219.js?ver=3.9.6'></script>
+<script type='text/javascript' src='js/bootstrap.min.js'></script>
+<script type='text/javascript' src='js/lightbox.min.js'></script>
+<script type='text/javascript' src='js/prism.js'></script>
+<script type='text/javascript' src='js/main.js'></script>
+</body>
+</html>
